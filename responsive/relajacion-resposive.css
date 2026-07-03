@@ -1,0 +1,62 @@
+@media(max-width:992px){
+
+    .content-layout{
+
+        grid-template-columns:1fr;
+    }
+
+    .next-postures{
+
+        width:100%;
+    }
+}
+
+@media(max-width:768px){
+
+    .routine-container{
+
+        padding:20px;
+    }
+
+    .top-bar{
+
+        flex-direction:column;
+        gap:15px;
+    }
+
+    .top-bar h1{
+
+        font-size:1.5rem;
+    }
+
+    .video-card img{
+
+        height:280px;
+    }
+
+    .side-header{
+
+        flex-direction:column;
+        align-items:flex-start;
+        gap:10px;
+    }
+}
+
+@media(max-width:480px){
+
+    .video-card img{
+
+        height:220px;
+    }
+
+    .posture-card{
+
+        flex-direction:column;
+    }
+
+    .posture-card img{
+
+        width:100%;
+        height:150px;
+    }
+}

@@ -1,0 +1,585 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>ZenSide | Posturas</title>
+
+    <link rel="stylesheet" href="css/posturas.css">
+    <link rel="stylesheet" href="responsive/resposive-postura.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+
+    <header class="navbar">
+
+        <div class="container nav-container">
+
+            <div class="logo">
+                <div><a href="index.html"><img src="images/Logo.png" alt=""></div></a>
+            </div>
+
+            <nav class="nav-links" id="navLinks">
+
+                <a id="inicio" href="index.html" >Inicio</a>
+                <a href="informacion.html">Información</a>
+                <a id="posturas" href="posturas.html" class="active">Posturas</a>
+
+                <div class="login-btn">
+
+                    <a href="login.html" class="">Iniciar sesión</a>
+
+                </div>
+            </nav>
+
+            <div class="nav-right">
+
+                <div class="menu-toggle" id="menuToggle">
+                    <i class="fas fa-bars"></i>
+                </div>
+
+            </div>
+
+        </div>
+
+    </header>
+
+    <!-- =========================
+            HERO
+    ========================== -->
+
+    <section class="postures-hero">
+
+        <div class="container">
+
+            <div class="hero-card">
+
+                <div class="hero-content">
+
+                    <span class="hero-badge">
+                        🌿 Yoga Infantil
+                    </span>
+
+                    <h1>
+                        Muestra de
+                        <span>Posturas</span>
+                    </h1>
+
+                    <p>
+                        Descubre posturas divertidas para desarrollar
+                        equilibrio, concentración, fuerza y bienestar.
+                    </p>
+
+                </div>
+
+                <div class="hero-image">
+
+                    <img src="images/Panda.png" alt="Yoga Infantil">
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- =========================
+            BUSCADOR
+    ========================== -->
+
+    <section class="search-section">
+
+        <div class="container">
+
+            <div class="search-container">
+
+                <i class="fa-solid fa-magnifying-glass"></i>
+
+                <input type="text" id="searchInput" placeholder="Buscar postura...">
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- =========================
+            FILTROS
+    ========================== -->
+
+    <section class="filters-section">
+
+        <div class="container">
+
+            <div class="filters">
+
+                <button class="filter-btn active" data-filter="all">
+                    Todas
+                </button>
+
+                <button class="filter-btn" data-filter="balance">
+                    Equilibrio
+                </button>
+
+                <button class="filter-btn" data-filter="strength">
+                    Fuerza
+                </button>
+
+                <button class="filter-btn" data-filter="calm">
+                    Calma
+                </button>
+
+                <button class="filter-btn" data-filter="flexibility">
+                    Flexibilidad
+                </button>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- =========================
+            GRID POSTURAS
+    ========================== -->
+
+    <section class="postures-section">
+
+        <div class="container">
+
+            <div class="postures-grid">
+
+                <p id="noResults" class="no-results">
+                    No se encontraron posturas
+                </p>
+
+                <!-- CARD 1 -->
+
+                <article class="posture-card" data-category="flexibility" data-id="1">
+
+                    <img src="images/jirafa.png" alt="El Árbol" id="morado">
+
+                    <span class="posture-tag flexibility">
+                        Flexibilidad
+                    </span>
+
+                    <h3>
+                        Saludo al Sol
+                    </h3>
+
+                    <p>
+                        Ayuda a mejorar la concentración y fortalece
+                        piernas mientras te sientes alto y fuerte.
+                    </p>
+
+                    <div class="posture-footer">
+
+                        <small>1 - 3 Min</small>
+
+                        <button class="play-btn">
+                            <i class="fa-solid fa-play"></i>
+                        </button>
+
+                    </div>
+
+                </article>
+
+                <!-- CARD 2 -->
+
+                <article class="posture-card" data-category="flexibility" data-id="2">
+
+                    <img src="images/gato.png" alt="El Guerrero" id="azul">
+
+                    <span class="posture-tag flexibility">
+                        Flexibilidad
+                    </span>
+
+                    <h3>
+                        Postura del gato
+                    </h3>
+
+                    <p>
+                        Fortalece brazos y piernas mientras desarrollas
+                        confianza y energía positiva.
+                    </p>
+
+                    <div class="posture-footer">
+
+                        <small>30 Seg - 1 Min</small>
+
+                        <button class="play-btn">
+                            <i class="fa-solid fa-play"></i>
+                        </button>
+
+                    </div>
+
+                </article>
+
+                <!-- CARD 3 -->
+
+                <article class="posture-card" data-category="strength" data-id="3">
+
+                    <img src="images/perro.png" alt="La Nube" id="naranja">
+
+                    <span class="posture-tag strength" data-category="strength" data-name="postura del perro">
+                        Fuerza
+                    </span>
+
+                    <h3>
+                        Postura del Perro
+                    </h3>
+
+                    <p>
+                        Relaja cuerpo y mente con movimientos suaves y
+                        respiración consciente.
+                    </p>
+
+                    <div class="posture-footer">
+
+                        <small>30 - 45 Seg</small>
+
+                        <button class="play-btn">
+                            <i class="fa-solid fa-play"></i>
+                        </button>
+
+                    </div>
+
+                </article>
+
+                <!-- CARD 4 -->
+
+                <article class="posture-card" data-category="calm" data-id="4">
+
+                    <img src="images/conejo.png" alt="El Gato" id="amarillo">
+
+                    <span class="posture-tag calm">
+                        Calma
+                    </span>
+
+                    <h3>
+                        Respiración relajante
+                    </h3>
+
+                    <p>
+                        Estira suavemente tu espalda y mejora la movilidad
+                        de toda la columna.
+                    </p>
+
+                    <div class="posture-footer">
+
+                        <small>2 - 5 Min</small>
+
+                        <button class="play-btn">
+                            <i class="fa-solid fa-play"></i>
+                        </button>
+
+                    </div>
+
+                </article>
+
+                <!-- CARD 5 -->
+
+                <article class="posture-card" data-category="strength" data-id="5">
+
+                    <img src="images/sapo.png" alt="El Perro" id="amarillo">
+
+                    <span class="posture-tag strength">
+                        Fuerza
+                    </span>
+
+                    <h3>
+                        Rana Saltarina
+                    </h3>
+
+                    <p>
+                        Fortalece todo tu cuerpo y mejora tu coordinación
+                        mientras juegas.
+                    </p>
+
+                    <div class="posture-footer">
+
+                        <small>30 seg - 1 Min</small>
+
+                        <button class="play-btn">
+                            <i class="fa-solid fa-play"></i>
+                        </button>
+
+                    </div>
+
+                </article>
+
+                <!-- CARD 6 -->
+
+                <article class="posture-card" data-category="flexibility" data-id="6">
+
+                    <img src="images/lobo.png" alt="Mariposa" id="rosado">
+
+                    <span class="posture-tag flexibility">
+                        Flexibilidad
+                    </span>
+
+                    <h3>
+                        Cobra Valiente
+                    </h3>
+
+                    <p>
+                        Abre tus caderas y siente la ligereza de una
+                        mariposa en movimiento.
+                    </p>
+
+                    <div class="posture-footer">
+
+                        <small>20 - 40 Seg</small>
+
+                        <button class="play-btn">
+                            <i class="fa-solid fa-play"></i>
+                        </button>
+
+                    </div>
+
+                </article>
+
+                <!-- CARD 7 -->
+
+                <article class="posture-card" data-category="calm" data-id="7">
+
+                    <img src="images/raton.png" alt="Mariposa" id="naranja">
+
+                    <span class="posture-tag calm">
+                        Calma
+                    </span>
+
+                    <h3>
+                        Mariposa Feliz
+                    </h3>
+
+                    <p>
+                        Abre tus caderas y siente la ligereza de una
+                        mariposa en movimiento.
+                    </p>
+
+                    <div class="posture-footer">
+
+                        <small>1 - 2 Min</small>
+
+                        <button class="play-btn">
+                            <i class="fa-solid fa-play"></i>
+                        </button>
+
+                    </div>
+
+                </article>
+
+                <!-- CARD 8 -->
+
+                <article class="posture-card" data-category="balance" data-id="8">
+
+                    <img src="images/oso_perezoso.png" alt="Mariposa" id="morado">
+
+                    <span class="posture-tag balance">
+                        Equilibrio
+                    </span>
+
+                    <h3>
+                        Arbol Fuerte
+                    </h3>
+
+                    <p>
+                        Abre tus caderas y siente la ligereza de una
+                        mariposa en movimiento.
+                    </p>
+
+                    <div class="posture-footer">
+
+                        <small>30 Seg</small>
+
+                        <button class="play-btn">
+                            <i class="fa-solid fa-play"></i>
+                        </button>
+
+                    </div>
+
+                </article>
+
+                <!-- CARD 9 -->
+
+                <article class="posture-card" data-category="strength" data-id="9">
+
+                    <img src="images/oveja.png" alt="Mariposa" id="amarillo">
+
+                    <span class="posture-tag strength">
+                        Fuerza
+                    </span>
+
+                    <h3>
+                        Postura de Estrella
+                    </h3>
+
+                    <p>
+                        Abre tus caderas y siente la ligereza de una
+                        mariposa en movimiento.
+                    </p>
+
+                    <div class="posture-footer">
+
+                        <small>30 Seg - 1 Min</small>
+
+                        <button class="play-btn">
+                            <i class="fa-solid fa-play"></i>
+                        </button>
+
+                    </div>
+
+                </article>
+
+                <!-- CARD 10 -->
+
+                <article class="posture-card" data-category="calm" data-id="10">
+
+                    <img src="images/oso.png" alt="Mariposa" id="azul">
+
+                    <span class="posture-tag calm">
+                        Calma
+                    </span>
+
+                    <h3>
+                        Postura del Niño
+                    </h3>
+
+                    <p>
+                        Abre tus caderas y siente la ligereza de una
+                        mariposa en movimiento.
+                    </p>
+
+                    <div class="posture-footer">
+
+                        <small>1 - 3 Min</small>
+
+                        <button class="play-btn">
+                            <i class="fa-solid fa-play"></i>
+                        </button>
+
+                    </div>
+
+                </article>
+
+                <!-- CARD 11 -->
+
+                <article class="posture-card" data-category="flexibility" data-id="11">
+
+                    <img src="images/vaca.png" alt="Mariposa" id="rosado">
+
+                    <span class="posture-tag flexibility">
+                        Flexibilidad
+                    </span>
+
+                    <h3>
+                        Postura de la Vaca
+                    </h3>
+
+                    <p>
+                        Abre tus caderas y siente la ligereza de una
+                        mariposa en movimiento.
+                    </p>
+
+                    <div class="posture-footer">
+
+                        <small>30 Seg - 1 Min</small>
+
+                        <button class="play-btn">
+                            <i class="fa-solid fa-play"></i>
+                        </button>
+
+                    </div>
+
+                </article>
+
+                <!-- CARD 12 -->
+
+                <article class="posture-card" data-category="strength" data-id="12">
+
+                    <img src="images/Elefante.png" alt="Mariposa" id="amarillo">
+
+                    <span class="posture-tag strength">
+                        Fuerza
+                    </span>
+
+                    <h3>
+                        Postura del Guardian
+                    </h3>
+
+                    <p>
+                        Abre tus caderas y siente la ligereza de una
+                        mariposa en movimiento.
+                    </p>
+
+                    <div class="posture-footer">
+
+                        <small>30 - 45 Seg</small>
+
+                        <button class="play-btn">
+                            <i class="fa-solid fa-play"></i>
+                        </button>
+
+                    </div>
+
+                </article>
+
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+            FOOTER
+    ========================== -->
+
+    <footer class="footer">
+
+        <div class="container footer-container">
+
+            <div class="footer-logo">
+
+                <h3>ZenSide</h3>
+
+                <p>
+                    © 2025 ZenSide - Angie Parada
+                </p>
+
+            </div>
+
+            <div class="footer-links">
+
+                <a href="index.html">Inicio</a>
+                <a href="informacion.html">Información</a>
+                <a href="posturas.html">Posturas</a>
+                <a href="#">Contacto</a>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+    <script src="js/posturas.js"></script>
+
+</body>
+
+</html>

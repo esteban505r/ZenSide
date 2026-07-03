@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>ZenSide | Iniciar Sesión</title>
+
+    <link rel="stylesheet" href="css/auth.css">
+    <link rel="stylesheet" href="responsive/auth-responsive.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+</head>
+
+<body>
+
+    <main class="auth-page">
+
+        <div class="auth-container">
+
+            <!-- IZQUIERDA -->
+
+            <section class="auth-left">
+
+                <div class="logo">
+
+                    <div><a href="index.html"><img src="images/Logo.png" alt=""></div></a>
+
+                </div>
+
+                <div class="welcome-image">
+
+                    <img src="images/Panda.png"
+                        alt="Panda ZenSide">
+
+                </div>
+
+                <div class="welcome-text">
+
+                    <h1>
+                        ¡Hola, Profe!
+                    </h1>
+
+                    <p>
+                        Bienvenido nuevamente a tu espacio <br>
+                        para guiar a los pequeños yoguis.
+                    </p>
+
+                </div>
+
+            </section>
+
+            <!-- DERECHA -->
+
+            <section class="auth-right">
+
+                <div class="auth-card">
+
+                    <h2>
+                        Iniciar Sesión
+                    </h2>
+
+                    <form id="loginForm">
+
+                        <div class="input-group">
+
+                            <label>
+                                Correo Electrónico
+                            </label>
+
+                            <div class="input-box">
+
+                                <i class="fa-regular fa-user"></i>
+
+                                <input
+                                    type="email"
+                                    id="loginEmail"
+                                    placeholder="correo@ejemplo.com"
+                                    required>
+
+                            </div>
+
+                        </div>
+
+                        <div class="input-group">
+
+                            <label>
+                                Contraseña
+                            </label>
+
+                            <div class="input-box">
+
+                                <i class="fa-solid fa-lock"></i>
+
+                                <input
+                                    type="password"
+                                    id="loginPassword"
+                                    placeholder="********"
+                                    required>
+
+                            </div>
+
+                        </div>
+
+                        <div class="remember-row">
+
+                            <label>
+
+                                <input type="checkbox">
+
+                                Recordarme
+
+                            </label>
+
+                        </div>
+
+                        <button
+                            type="submit"
+                            class="auth-btn">
+
+                            Iniciar Sesión
+
+                            <i class="fa-solid fa-arrow-right"></i>
+
+                        </button>
+
+                        <p class="auth-link">
+
+                            ¿No tienes una cuenta?
+
+                            <a href="register.html">Crear una Cuenta</a>
+
+                        </p>
+
+                        <div id="loginMessage"></div>
+
+                    </form>
+
+                </div>
+
+            </section>
+
+        </div>
+
+    </main>
+
+    <script src="js/auth.js"></script>
+    <script src="js/login.js"></script>
+
+</body>
+</html>

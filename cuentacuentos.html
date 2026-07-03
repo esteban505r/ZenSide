@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>ZenSide | Cuenta Cuentos</title>
+
+    <link rel="stylesheet" href="css/cuentacuentos.css">
+    <link rel="stylesheet" href="responsive/resposive-cuentos.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+</head>
+
+<body>
+
+    <button class="menu-toggle" id="menuToggle">
+
+        <i class="fa-solid fa-bars"></i>
+
+    </button>
+
+    <!-- ==========================
+         SIDEBAR
+    =========================== -->
+
+    <aside class="sidebar">
+
+        <div class="sidebar-logo">
+
+            <img src="images/logo.png" alt="ZenSide">
+
+        </div>
+
+        <div class="teacher-card">
+
+            <img src="images/Panda.png" alt="" class="teacher-avatar">
+
+            <div>
+
+                <h4 id="teacherName">
+                    Profesora
+                </h4>
+
+            </div>
+
+        </div>
+
+        <nav class="sidebar-menu">
+
+            <a href="dashboard.html" class="active">
+
+                <i class="fa-solid fa-house"></i>
+                Inicio
+
+            </a>
+
+            <a href="rutinas.html">
+
+                <i class="fa-solid fa-spa"></i>
+                Rutinas
+
+            </a>
+
+            <a href="cuentacuentos.html">
+
+                <i class="fa-solid fa-book-open"></i>
+                Cuenta Cuentos
+
+            </a>
+
+
+        </nav>
+
+        <button class="start-practice-btn" id="logoutBtn">
+            Cerrar Sesión
+        </button>
+
+    </aside>
+
+    <div class="sidebar-overlay" id="sidebarOverlay"></div>
+
+
+    <!-- CONTENIDO -->
+
+    <main class="stories-main">
+
+        <!-- HEADER -->
+
+        <header class="stories-header">
+
+            <div>
+
+                <h1>Hora del Cuento</h1>
+
+                <p>
+                    Explora historias mágicas y posturas de yoga.
+                </p>
+
+            </div>
+
+
+        </header>
+
+        <!-- HERO -->
+
+        <section class="featured-story">
+
+            <div class="featured-content">
+
+
+                <h2>
+
+                    El Vuelo del
+                    Dragón Calma
+
+                </h2>
+
+                <p>
+
+                    Únete al pequeño Dragón en una aventura
+                    para aprender a respirar como un volcán
+                    que se apaga lentamente.
+
+                </p>
+
+            
+
+                <button class="story-btn">
+
+                    <a href="cuento-dragon.html">Comenzar Ahora</a>
+
+                </button>
+
+            </div>
+
+            <img
+                src="images/vuelo dragon.png"
+                alt="Dragón">
+
+        </section>
+
+
+        <!-- GRID -->
+
+        <section class="stories-grid">
+
+            <!-- TARJETA 1 -->
+
+            <article class="story-card">
+
+                <img src="images/jaguar.png" alt="Jaguar">
+
+                <div class="story-card-body">
+
+                    <span class="story-category">
+
+                        SELVA
+
+                    </span>
+
+                    <h3>
+
+                        La Fiesta del Jaguar
+
+                    </h3>
+
+                    <p>
+
+                        Aprende a moverte con agilidad
+                        y fuerza mientras exploras la selva.
+
+                    </p>
+
+                    <div class="story-card-footer">
+
+                        <button>
+
+                            <a href="fiesta-jaguar.html"><i class="fa-solid fa-play"></i></a>
+
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+            <!-- TARJETA 2 -->
+
+            <article class="story-card">
+
+                <img src="images/planeta.png" alt="Planeta">
+
+                <div class="story-card-body">
+
+                    <span class="story-category">
+
+                        ESPACIO
+
+                    </span>
+
+                    <h3>
+
+                        Misión Planeta
+
+                    </h3>
+
+                    <p>
+
+                        Viaja por las estrellas mientras
+                        descubres la calma interior.
+
+                    </p>
+
+                    <div class="story-card-footer">
+
+
+                        <button>
+
+                            <a href="mision-planeta.html"><i class="fa-solid fa-play"></i></a>
+
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+            <!-- TARJETA 3 -->
+
+            <article class="story-card">
+
+                <img src="images/ballena.png" alt="Ballena">
+
+                <div class="story-card-body">
+
+                    <span class="story-category">
+
+                        OCÉANO
+
+                    </span>
+
+                    <h3>
+
+                        El Tesoro de la Ballena
+
+                    </h3>
+
+                    <p>
+
+                        Sumérgete en un mundo lleno de
+                        calma y respiración consciente.
+
+                    </p>
+
+                    <div class="story-card-footer">
+
+
+                        <button>
+
+                            <a href="tesoro-ballena.html"><i class="fa-solid fa-play"></i></a>
+
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+        </section>
+
+    </main>
+
+    <script src="js/cuentacuentos.js"></script>
+    <script src="js/auth.js"></script>r
+
+</body>
+
+</html>

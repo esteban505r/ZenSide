@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>ZenSide | Rutinas</title>
+
+    <link rel="stylesheet" href="css/rutinas.css">
+    <link rel="stylesheet" href="responsive/rutinas-responsive.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+</head>
+
+<body>
+
+    <!-- BOTÓN MENÚ MOBILE -->
+
+    <button class="menu-toggle" id="menuToggle">
+
+        <i class="fa-solid fa-bars"></i>
+
+    </button>
+
+    <!-- ==========================
+         SIDEBAR
+    =========================== -->
+
+    <aside class="sidebar">
+
+        <div class="sidebar-logo">
+
+            <img src="images/logo.png" alt="ZenSide">
+
+        </div>
+
+        <div class="teacher-card">
+
+            <img src="images/Panda.png" alt="" class="teacher-avatar">
+
+            <div>
+
+                <h4 id="teacherName">
+                    Profesora
+                </h4>
+
+            </div>
+
+        </div>
+
+        <nav class="sidebar-menu">
+
+            <a href="dashboard.html" >
+
+                <i class="fa-solid fa-house"></i>
+                Inicio
+
+            </a>
+
+            <a href="rutinas.html" class="active">
+
+                <i class="fa-solid fa-spa"></i>
+                Rutinas
+
+            </a>
+
+            <a href="cuentacuentos.html">
+
+                <i class="fa-solid fa-book-open"></i>
+                Cuenta Cuentos
+
+            </a>
+
+
+        </nav>
+
+        <button class="start-practice-btn" id="logoutBtn">
+            Cerrar Sesión
+        </button>
+
+    </aside>
+
+    <div class="sidebar-overlay" id="sidebarOverlay"></div>
+
+    <div class="routines-layout">
+
+        <!-- CONTENIDO -->
+
+        <main class="routines-main">
+
+            <!-- HEADER -->
+
+            <header class="routines-header">
+
+                <div>
+
+                    <span class="section-label">
+
+                        ELIGE TU AVENTURA
+
+                    </span>
+
+                    <h1>
+
+                        Selección de Rutina
+
+                    </h1>
+
+                </div>
+
+                <div class="filter-buttons">
+
+                    <button class="active-filter" data-filter="todas">
+                        Todas
+                    </button>
+
+                    <button data-filter="fuerza">
+                        Fuerza
+                    </button>
+
+                    <button data-filter="calma">
+                        Calma
+                    </button>
+
+                    <button data-filter="equilibrio">
+                        Equilibrio
+                    </button>
+
+                    <button data-filter="flexibilidad">
+                        Flexibilidad
+                    </button>
+
+                </div>
+
+            </header>
+
+            <!-- TARJETAS INFERIORES -->
+
+            <section class="routine-grid">
+
+                <!-- ÁRBOL -->
+
+                <article class="routine-card" data-category="flexibilidad">
+
+                    <img src="images/oso_perezoso.png" alt="Árbol Mágico" id="morado">
+
+                    <div class="routine-card-content">
+
+                        <span class="tag">
+
+                            FLEXIBILIDAD
+
+                        </span>
+
+                        <span class="duration">
+
+                            4 - 6 Min
+
+                        </span>
+
+                        <h3>
+
+                            Despertar Mañanero
+
+                        </h3>
+
+                        <p>
+
+                            Las posturas del gato, perro y saludo al sol favorecen el estiramiento muscular, la
+                            movilidad articular y la elasticidad corporal.
+
+                        </p>
+
+                        <div class="card-footer">
+
+                            <button>
+
+                                <a href="despetar-mañanero.html"><i class="fa-solid fa-play"></i></a>
+
+                            </button>
+
+                            
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+                <!-- DINO -->
+
+                <article class="routine-card" data-category="fuerza">
+
+                    <img src="images/lobo.png" alt="Dinosaurio" id="rosado">
+
+                    <div class="routine-card-content" >
+
+                        <span class="tag fuerza">
+
+                            FUERZA
+
+                        </span>
+
+                        <span class="duration">
+
+                            5 - 7 Min
+
+                        </span>
+
+                        <h3>
+
+                            Animales Divertidos
+
+                        </h3>
+
+                        <p>
+
+                            Estas posturas requieren sostener el peso corporal, fortalecer piernas, brazos, espalda y
+                            abdomen, además de mejorar la estabilidad.
+
+                        </p>
+
+                        <div class="card-footer">
+
+                            <button>
+
+                                <a href="animales-divertidos.html"><i class="fa-solid fa-play"></i></a>
+
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+                <!-- NUBE -->
+
+                <article class="routine-card" data-category="calma">
+
+                    <img src="images/raton.png" alt="Nube Flotante" id="naranja">
+
+                    <div class="routine-card-content" >
+
+                        <span class="tag respiracion">
+
+                            CALMA
+
+                        </span>
+
+                        <span class="duration">
+
+                            3 - 5 Min
+
+                        </span>
+
+                        <h3>
+
+                            Relajación Escolar
+
+                        </h3>
+
+                        <p>
+
+                            Está enfocada en la relajación, la respiración consciente, la reducción del estrés y la
+                            concentración.
+
+                        </p>
+
+                        <div class="card-footer">
+
+                            <button>
+
+                                <a href="relajacion-escolar.html"><i class="fa-solid fa-play"></i></a>
+
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+            </section>
+
+            <!-- FOOTER -->
+
+            <footer class="routines-footer">
+
+                <div>
+
+                    <strong>
+                        Zen Playground
+                    </strong>
+
+                    <p>
+                        © 2024 Zen Playground - Namaste for Kids
+                    </p>
+
+                </div>
+
+                <div class="footer-links">
+
+                    <a href="#">
+                        Safety Center
+                    </a>
+
+                    <a href="#">
+                        Privacy Policy
+                    </a>
+
+                    <a href="#">
+                        For Educators
+                    </a>
+
+                    <a href="#">
+                        Contact Us
+                    </a>
+
+                </div>
+
+            </footer>
+
+        </main>
+
+    </div>
+
+    <script src="js/rutinas.js"></script>
+
+</body>
+
+</html>

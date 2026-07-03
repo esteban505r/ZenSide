@@ -1,0 +1,525 @@
+/*TABLET*/
+
+@media (max-width:1024px) {
+
+    .sidebar {
+
+        width: 220px;
+
+    }
+
+    .stories-main {
+
+        width: calc(100% - 220px);
+
+        padding: 20px;
+
+    }
+
+    .stories-grid {
+
+        grid-template-columns:
+            repeat(2, 1fr);
+
+    }
+
+    .featured-story {
+
+        flex-direction: column;
+
+        text-align: center;
+
+        gap: 20px;
+
+    }
+
+    .featured-story img {
+
+        width: 220px;
+
+    }
+
+}
+
+/*MOBILE*/
+
+@media (max-width:768px) {
+
+    body {
+
+        display: block;
+
+        overflow-x: hidden;
+
+    }
+
+    /* BOTÓN MENÚ */
+
+    .menu-toggle {
+
+        display: flex;
+
+        align-items: center;
+
+        justify-content: center;
+
+        position: fixed;
+
+        top: 15px;
+
+        left: 15px;
+
+        width: 45px;
+
+        height: 45px;
+
+        border: none;
+
+        border-radius: 12px;
+
+        background: white;
+
+        box-shadow: 0 10px 25px rgba(0, 0, 0, .1);
+
+        z-index: 9999;
+
+        cursor: pointer;
+
+    }
+
+
+    /* OVERLAY */
+
+    .sidebar-overlay {
+
+        position: fixed;
+
+        inset: 0;
+
+        background: rgba(0, 0, 0, .45);
+
+        opacity: 0;
+
+        visibility: hidden;
+
+        transition: .3s;
+
+        z-index: 9998;
+
+        display: block;
+
+    }
+
+
+    /* SIDEBAR */
+
+    .sidebar {
+
+        position: fixed;
+
+        left: -280px;
+
+        top: 0;
+
+        width: 260px;
+
+        height: 100vh;
+
+        transition: .35s ease;
+
+        z-index: 9999;
+
+        border-radius: 0 25px 25px 0;
+
+    }
+
+    .sidebar.active {
+
+        left: 0;
+
+    }
+
+    /* CONTENIDO */
+
+    .stories-main {
+
+        margin-left: 0;
+
+        width: 100%;
+
+        padding: 80px 15px 20px;
+
+    }
+
+    /* HEADER */
+
+    .stories-header {
+
+        justify-content: center;
+
+        text-align: center;
+
+        margin-bottom: 20px;
+
+    }
+
+    .stories-header h1 {
+
+        font-size: 1.8rem;
+
+    }
+
+    .stories-header p {
+
+        font-size: .9rem;
+
+    }
+
+    .header-actions {
+
+        display: none;
+
+    }
+
+    /* HERO */
+
+    .featured-story {
+
+        flex-direction: column;
+
+        align-items: flex-start;
+
+        padding: 25px;
+
+        border-radius: 30px;
+
+    }
+
+    .featured-story img {
+
+        width: 150px;
+
+        align-self: flex-end;
+
+        margin-top: -40px;
+
+    }
+
+    .featured-story h2 {
+
+        font-size: 2rem;
+
+        line-height: 1.1;
+
+    }
+
+    .featured-story p {
+
+        font-size: .95rem;
+
+    }
+
+    .story-btn {
+
+        width: 100%;
+
+        justify-content: center;
+
+    }
+
+    /* FILTROS */
+
+    .stories-section-title {
+
+        flex-direction: column;
+
+        align-items: flex-start;
+
+        gap: 15px;
+
+    }
+
+    .story-filters {
+
+        width: 100%;
+
+        overflow-x: auto;
+
+        scrollbar-width: none;
+
+        padding-bottom: 5px;
+
+    }
+
+    .story-filters::-webkit-scrollbar {
+
+        display: none;
+
+    }
+
+    .story-filters button {
+
+        white-space: nowrap;
+
+    }
+
+    /* TARJETAS */
+
+    .stories-grid {
+
+        grid-template-columns: 1fr;
+
+        gap: 18px;
+
+    }
+
+    .story-card {
+
+        display: flex;
+
+        align-items: center;
+
+        padding: 12px;
+
+        border-radius: 25px;
+
+    }
+
+    .story-card img {
+
+        width: 90px;
+
+        height: 90px;
+
+        border-radius: 50%;
+
+        flex-shrink: 0;
+
+    }
+
+    .story-card-body {
+
+        padding: 0 0 0 15px;
+
+        width: 100%;
+
+    }
+
+    .story-card h3 {
+
+        font-size: 1rem;
+
+        margin: 6px 0;
+
+    }
+
+    .story-card p {
+
+        font-size: .85rem;
+
+        line-height: 1.4;
+
+    }
+
+    .story-card-footer {
+
+        margin-top: 10px;
+
+    }
+
+    .story-card-footer button {
+
+        width: 34px;
+
+        height: 34px;
+
+    }
+
+}
+
+/* ==========================================
+MOBILE PEQUEÑO
+========================================== */
+
+@media (max-width:480px) {
+
+    .featured-story {
+
+        padding: 20px;
+
+    }
+
+    .featured-story h2 {
+
+        font-size: 1.7rem;
+
+    }
+
+    .featured-story img {
+
+        width: 120px;
+
+    }
+
+    .stories-header h1 {
+
+        font-size: 1.5rem;
+
+    }
+
+}
+
+@media (max-width: 1024px) {
+
+    body {
+        display: block;
+        overflow-x: hidden;
+    }
+
+    .menu-toggle {
+        display:flex;
+
+        justify-content:center;
+
+        align-items:center;
+
+        position:fixed;
+
+        top:18px;
+
+        left:18px;
+
+        width:48px;
+
+        height:48px;
+
+        border-radius:15px;
+
+        background:#016288;
+
+        color:white;
+
+        font-size:22px;
+
+        z-index:9999;
+
+        box-shadow:0 8px 20px rgba(0,0,0,.18);
+    }
+
+    .sidebar {
+        position: fixed;
+        top: 0;
+        left: 0;
+
+        width: 320px;
+        max-width: 90%;
+        height: 100vh;
+
+        background: white;
+        z-index: 1500;
+
+        padding: 24px;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        /* CAMBIO IMPORTANTE */
+
+        transform: translateX(-100%);
+        transition: transform 0.35s ease;
+
+        overflow-y: auto;
+    }
+
+    .sidebar.active {
+        transform: translateX(0);
+    }
+
+    .sidebar-logo {
+        margin-bottom: 30px;
+    }
+
+    .teacher-card {
+        margin-top: 60px;
+        margin-bottom: 30px;
+    }
+
+    .sidebar-menu {
+        display: flex;
+        flex-direction: column;
+        gap: 14px;
+        flex: 1;
+        /* ocupa espacio central */
+    }
+}
+
+@media (max-width: 768px) {
+
+    .teacher-card {
+        margin-top: 60px;
+        margin-bottom: 30px;
+    }
+
+    .sidebar-logo{
+        display: none;
+
+    }
+
+    .dashboard-hero {
+        
+        padding: 30px;
+        min-height: auto;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+    }
+
+    .hero-info h1 {
+        font-size: 2rem;
+    }
+
+    .hero-actions {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .white-btn,
+    .transparent-btn {
+        width: 100%;
+    }
+
+    .hero-icon {
+        display: none;
+    }
+
+    .routine-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .mindfulness-banner {
+        padding: 25px;
+    }
+}
+
+@media (max-width: 480px) {
+    
+
+    .sidebar-logo{
+        display: none;
+
+    }
+
+    .sidebar {
+        width: 100%;
+        max-width: 100%;
+    }
+
+
+    .hero-info h1 {
+        font-size: 1.6rem;
+    }
+
+    .section-header h2 {
+        font-size: 1.3rem;
+    }
+}

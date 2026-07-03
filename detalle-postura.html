@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>ZenSide | Postura</title>
+
+    <link rel="stylesheet" href="css/detalle-postura.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+</head>
+
+<body>
+
+    <main class="posture-page">
+
+        <!--=========================
+            ENCABEZADO
+        ==========================-->
+
+        <header class="top-bar">
+
+            <button class="back-btn" onclick="history.back()">
+
+                <a href="posturas.html"><i class="fa-solid fa-arrow-left"></i></a>
+
+            </button>
+
+            <div class="title-box">
+
+                <h1 id="postureName">
+
+                    Nombre de la postura
+
+                </h1>
+
+                <p id="postureTime">
+
+                    Duración
+
+                </p>
+
+            </div>
+
+        </header>
+
+        <!--=========================
+            VIDEO
+        ==========================-->
+
+        <section class="video-container">
+
+            <video
+                id="postureVideo"
+                controls
+                controlsList="nodownload"
+                playsinline>
+
+                <source id="videoSource" src="" type="video/mp4">
+
+                Tu navegador no soporta video.
+
+            </video>
+
+        </section>
+
+        <!--=========================
+            INFORMACIÓN
+        ==========================-->
+
+        <section class="info-card">
+
+            <span class="category" id="postureCategory">
+
+                Flexibilidad
+
+            </span>
+
+            <h2>
+
+                Beneficios
+
+            </h2>
+
+            <p id="postureDescription">
+
+                Descripción de la postura.
+
+            </p>
+
+        </section>
+
+        <!--=========================
+            CONSEJOS
+        ==========================-->
+
+        <section class="tips-card">
+
+            <h2>
+
+                Recomendaciones
+
+            </h2>
+
+            <ul id="tipsList">
+
+                <!-- Se cargan desde JS -->
+
+            </ul>
+
+        </section>
+
+        <!--=========================
+            BOTONES
+        ==========================-->
+
+        <section class="actions">
+
+            <button class="secondary-btn" onclick="history.back()">
+
+                <i class="fa-solid fa-arrow-left"></i>
+
+                Volver
+
+            </button>
+
+            <button class="primary-btn" id="nextPostureBtn">
+
+                <i class="fa-solid fa-forward"></i>
+
+                Siguiente postura
+
+            </button>
+
+        </section>
+
+    </main>
+
+    <script src="js/detalle-postura.js"></script>
+
+</body>
+
+</html>

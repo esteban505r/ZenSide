@@ -1,0 +1,701 @@
+/* VARIABLES*/
+
+:root {
+    --primary: #016288;
+    --primary-light: #38BDF8;
+    --green-soft: #D1F6E6;
+    --green-card: #9DF4D1;
+    --pink-soft: #FDB5CC;
+    --body-bg: #F4F7F4;
+    --white: #FFFFFF;
+    --title: #005D46;
+    --text: #666666;
+    --shadow:
+    0 10px 30px rgba(0,0,0,.08);
+
+}
+
+/*RESET*/
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    display: flex;
+    font-family:'Nunito',sans-serif;
+    background:var(--body-bg);
+    color:#333;
+}
+
+a{
+
+    text-decoration:none;
+
+}
+
+button{
+
+    border:none;
+    cursor:pointer;
+    font-family:'Nunito',sans-serif;
+
+}
+
+/* ==========================================
+   SIDEBAR
+========================================== */
+
+a{
+    color: white;
+}
+
+.sidebar{
+    width: 280px;
+    background: white;
+    padding: 30px 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-right: 1px solid #ececec;
+    position: sticky;
+    top: 0;
+    height: 100vh;
+    z-index: 1500;
+}
+
+.sidebar-logo{
+
+    margin-bottom:35px;
+
+}
+
+.sidebar-logo img{
+
+    width:170px;
+
+}
+
+
+/* ==========================================
+   TARJETA PROFESOR
+========================================== */
+
+.teacher-card{
+
+    background:#F8F9F7;
+
+    border-radius:25px;
+
+    padding:18px;
+
+    display:flex;
+
+    align-items:center;
+
+    gap:15px;
+
+    margin-bottom:35px;
+
+}
+
+.teacher-avatar{
+
+    width:60px;
+    height:60px;
+
+    border-radius:50%;
+
+    object-fit:cover;
+
+}
+
+.teacher-card h4{
+
+    font-size:1rem;
+
+    color:var(--title);
+
+}
+
+.teacher-card span{
+
+    color:#777;
+
+    font-size:.85rem;
+
+}
+
+/* ==========================================
+   MENÚ
+========================================== */
+
+.sidebar-menu{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:12px;
+
+}
+
+.sidebar-menu a{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:15px;
+
+    color:#666;
+
+    font-weight:700;
+
+    padding:15px 18px;
+
+    border-radius:18px;
+
+    transition:.3s ease;
+
+}
+
+.sidebar-menu a:hover{
+
+    background:#F6F8FA;
+
+}
+
+.sidebar-menu a.active{
+
+    background:#DCEFFB;
+
+    color:var(--selected);
+
+}
+
+.sidebar-menu i{
+
+    font-size:1rem;
+
+}
+
+/* ==========================================
+   BOTÓN PRÁCTICA
+========================================== */
+
+.start-practice-btn{
+
+    background:var(--primary);
+
+    color:white;
+
+    border-radius:999px;
+
+    padding:16px;
+
+    font-weight:800;
+
+    margin-top:40px;
+
+    transition:.3s ease;
+
+}
+
+.start-practice-btn:hover{
+
+    transform:translateY(-3px);
+
+}
+
+/* ==========================================
+   MAIN
+========================================== */
+
+.routines-main{
+
+    flex:1;
+
+    padding:40px;
+
+}
+
+/* ==========================================
+   HEADER
+========================================== */
+
+.routines-header{
+
+    display:flex;
+    justify-content:space-between;
+    align-items:flex-start;
+
+    margin-bottom:35px;
+
+}
+
+.section-label{
+
+    color:var(--primary);
+
+    font-weight:800;
+
+    font-size:.8rem;
+
+    letter-spacing:1px;
+
+}
+
+.routines-header h1{
+
+    font-size:3.2rem;
+
+    margin-top:8px;
+
+}
+
+.filter-buttons{
+
+    display:flex;
+
+    gap:12px;
+
+}
+
+.filter-buttons button{
+
+    background:#ECEFEC;
+
+    padding:12px 22px;
+
+    border-radius:999px;
+
+    color:#555;
+
+    transition:.3s;
+
+}
+
+.active-filter{
+
+    background:white !important;
+
+    box-shadow:var(--shadow);
+
+}
+
+/* ==========================================
+   DESTACADOS
+========================================== */
+
+.featured-routines{
+
+    display:grid;
+
+    grid-template-columns:
+    2fr 1fr;
+
+    gap:25px;
+
+    margin-bottom:35px;
+
+}
+
+/* CARD PRINCIPAL */
+
+.main-routine{
+
+    background:white;
+
+    border-radius:35px;
+
+    overflow:hidden;
+
+    display:grid;
+
+    grid-template-columns:
+    1fr 1fr;
+
+    min-height:250px;
+
+    box-shadow:var(--shadow);
+
+}
+
+.routine-content{
+
+    padding:35px;
+
+}
+
+.routine-badge{
+
+    display:inline-block;
+
+    background:#DCEFFB;
+
+    color:var(--primary);
+
+    padding:8px 15px;
+
+    border-radius:999px;
+
+    font-size:.8rem;
+
+    font-weight:700;
+
+}
+
+.main-routine h2{
+
+    margin-top:20px;
+
+    font-size:3rem;
+
+    line-height:1.1;
+
+}
+
+.main-routine p{
+
+    margin-top:20px;
+
+    color:var(--text);
+
+    line-height:1.8;
+
+}
+
+.main-routine img{
+
+    width:100%;
+    height:100%;
+
+    object-fit:cover;
+
+}
+
+/* BOTON */
+
+.play-btn{
+
+    margin-top:25px;
+
+    background:#9DF4D1;
+
+    color:#005D46;
+
+    padding:14px 22px;
+
+    border-radius:999px;
+
+    font-weight:700;
+
+}
+
+/* ==========================================
+   CARD LUNA
+========================================== */
+
+.moon-routine{
+
+    background:white;
+
+    border-radius:35px;
+
+    overflow:hidden;
+
+    box-shadow:var(--shadow);
+
+}
+
+.moon-routine img{
+
+    width:100%;
+    height:220px;
+
+    object-fit:cover;
+
+}
+
+.moon-content{
+
+    padding:25px;
+
+}
+
+.moon-badge{
+
+    display:inline-block;
+
+    background:#ECEEF8;
+
+    padding:8px 12px;
+
+    border-radius:999px;
+
+    font-size:.75rem;
+
+}
+
+.moon-content h3{
+
+    margin-top:15px;
+
+    font-size:2rem;
+
+}
+
+.moon-content p{
+
+    margin-top:10px;
+
+    color:var(--text);
+
+}
+
+.moon-content button{
+
+    margin-top:20px;
+
+    width:100%;
+
+    background:#EEF3F5;
+
+    padding:14px;
+
+    border-radius:999px;
+
+    color:var(--primary);
+
+    font-weight:700;
+
+}
+
+/* ==========================================
+   GRID INFERIOR
+========================================== */
+
+.routine-grid{
+
+    display:grid;
+
+    grid-template-columns:
+    repeat(3,1fr);
+
+    gap:25px;
+
+}
+
+/* TARJETAS */
+
+.routine-card{
+
+    background:white;
+
+    border-radius:35px;
+
+    overflow:hidden;
+
+    box-shadow:var(--shadow);
+
+    transition:.3s;
+
+}
+
+.routine-card:hover{
+
+    transform:translateY(-5px);
+
+}
+
+.routine-card img{
+
+    width:100%;
+    height:220px;
+
+    object-fit:contain;
+
+}
+
+.routine-card #morado{
+    background-color: #A40BFB;
+}
+
+.routine-card #rosado{
+    background-color: #FB3CA6;
+}
+
+.routine-card #naranja{
+    background-color: #FB710A;
+}
+
+.routine-card-content{
+
+    padding:20px;
+
+}
+
+.tag{
+
+    display:inline-block;
+
+    padding:6px 12px;
+
+    border-radius:999px;
+
+    font-size:.7rem;
+
+    font-weight:700;
+
+}
+
+.equilibrio{
+
+    background:#F6D6E4;
+
+}
+
+.fuerza{
+
+    background:#FFD4D4;
+
+}
+
+.respiracion{
+
+    background:#DCEFFB;
+
+}
+
+.duration{
+
+    display:block;
+
+    margin-top:12px;
+
+    font-size:.8rem;
+
+    color:#777;
+
+}
+
+.routine-card h3{
+
+    margin-top:10px;
+
+    font-size:1.8rem;
+
+}
+
+.routine-card p{
+
+    margin-top:12px;
+
+    color:var(--text);
+
+    line-height:1.8;
+
+}
+
+.card-footer{
+
+    margin-top:20px;
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+}
+
+.card-footer button a{
+
+    padding: 15px 20px;
+    border-radius:50%;
+    background:#007D5C;
+    color:white;
+
+}
+
+/* ==========================================
+   AVATARES
+========================================== */
+
+.avatars{
+
+    display:flex;
+
+}
+
+.avatars img{
+
+    width:28px;
+    height:28px;
+
+    border-radius:50%;
+
+    margin-right:-8px;
+
+    border:2px solid white;
+
+}
+
+/* ==========================================
+   FOOTER
+========================================== */
+
+.routines-footer{
+
+    margin-top:50px;
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    color:#777;
+
+    font-size:.85rem;
+
+}
+
+.footer-links{
+
+    display:flex;
+
+    gap:25px;
+
+}
+
+.footer-links a{
+
+    color:#888;
+
+}
+
+/* ==========================================
+   HOVERS
+========================================== */
+
+.filter-buttons button:hover,
+.practice-btn:hover,
+.play-btn:hover,
+.moon-content button:hover{
+
+    transform:translateY(-2px);
+
+    transition:.3s;
+
+}
+
+/* ==========================
+   BOTÓN HAMBURGUESA
+========================== */
+
+.menu-toggle{
+
+    display:none;
+    position: relative;
+
+}

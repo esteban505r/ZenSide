@@ -1,0 +1,158 @@
+/* =====================================
+TABLET
+===================================== */
+
+@media(max-width:992px){
+
+  .hero-container,
+  .explore-grid,
+  .learning-section{
+
+    grid-template-columns:1fr;
+
+  }
+
+  .hero-left h1{
+
+    font-size:3.8rem;
+
+  }
+
+  .nav-links .login-btn a{
+    margin-left: 0px;
+  }
+
+}
+
+/* =====================================
+MOBILE
+===================================== */
+
+@media(max-width:768px){
+  
+  .nav-links .login-btn a{
+    margin-left: 0px;
+  }
+
+  .nav-links{
+
+    position:absolute;
+
+    top:90px;
+    left:-100%;
+
+    width:100%;
+
+    background:white;
+
+    flex-direction:column;
+
+    padding:30px;
+
+    transition:.4s;
+
+  }
+
+  .nav-links.active{
+
+    left:0;
+
+  }
+
+  .menu-toggle{
+
+    display:block;
+
+    font-size:1.5rem;
+
+  }
+
+  .hero{
+
+    padding-top:120px;
+
+  }
+
+  .hero-left h1{
+
+    font-size:2.8rem;
+
+  }
+
+  .hero-buttons{
+
+    flex-direction:column;
+
+  }
+
+  .big-card{
+
+    flex-direction:column;
+
+    gap:25px;
+
+  }
+
+  .learning-cards{
+
+    flex-direction:column;
+
+  }
+
+  .cta-box{
+
+    padding:50px 25px;
+
+  }
+
+  .cta-box h2{
+
+    font-size:2rem;
+
+  }
+
+  .cta-buttons{
+
+    flex-direction:column;
+
+  }
+
+  .footer-container{
+
+    flex-direction:column;
+
+    gap:20px;
+
+  }
+
+  .footer-links{
+
+    flex-wrap:wrap;
+
+    justify-content:center;
+
+  }
+
+}
+
+/* =====================================
+SMALL MOBILE
+===================================== */
+
+@media(max-width:480px){
+
+  
+
+  .hero-left h1{
+
+    font-size:2.2rem;
+
+  }
+
+  .hero-left p{
+
+    font-size:.95rem;
+
+  }
+
+}

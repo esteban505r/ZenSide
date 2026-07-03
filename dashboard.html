@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>ZenSide | Dashboard</title>
+
+    <!-- GOOGLE FONTS -->
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+
+    <!-- ICONOS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <!-- ESTILOS -->
+    <link rel="stylesheet" href="css/dashboard.css">
+    <link rel="stylesheet" href="responsive/dashboard-responsive.css">
+
+</head>
+
+<body>
+
+    <button class="menu-toggle" id="menuToggle">
+
+        <i class="fa-solid fa-bars"></i>
+
+    </button>
+
+    <!-- ==========================
+         SIDEBAR
+    =========================== -->
+
+    <aside class="sidebar">
+
+        <div class="sidebar-logo">
+
+            <img src="images/logo.png" alt="ZenSide">
+
+        </div>
+
+        <div class="teacher-card">
+
+            <img src="images/Panda.png" alt="" class="teacher-avatar">
+
+            <div>
+
+                <h4 id="teacherName">
+                    Profesora
+                </h4>
+
+            </div>
+
+        </div>
+
+        <nav class="sidebar-menu">
+
+            <a href="dashboard.html" class="active">
+
+                <i class="fa-solid fa-house"></i>
+                Inicio
+
+            </a>
+
+            <a href="rutinas.html">
+
+                <i class="fa-solid fa-spa"></i>
+                Rutinas
+
+            </a>
+
+            <a href="cuentacuentos.html">
+
+                <i class="fa-solid fa-book-open"></i>
+                Cuenta Cuentos
+
+            </a>
+
+
+        </nav>
+
+        <button class="start-practice-btn" id="logoutBtn">
+            Cerrar Sesión
+        </button>
+
+    </aside>
+
+    <div class="sidebar-overlay" id="sidebarOverlay"></div>
+
+    <main class="dashboard-content">
+
+        <!-- ==========================
+         CONTENIDO
+    =========================== -->
+
+        <!-- HERO -->
+
+        <section class="dashboard-hero">
+
+            <div class="hero-info">
+
+                <h1>
+
+                    ¡Buen día,
+                    <span id="heroTeacherName">
+                        Profesora
+                    </span>!
+
+                </h1>
+
+                <p>
+
+                    La Sala Girasol está 85% en calma hoy.
+                    ¿Lista para dirigir una sesión de mindfulness?
+
+                </p>
+
+                <div class="hero-actions">
+
+                    <button class="white-btn">
+
+                        Ver Reportes
+
+                    </button>
+
+                    <button class="transparent-btn">
+
+                        Gestionar Estudiantes
+
+                    </button>
+
+                </div>
+
+            </div>
+
+            <div class="hero-icon">
+
+                <i class="fa-solid fa-seedling"></i>
+
+            </div>
+
+        </section>
+
+        <!-- ==========================
+             CATEGORÍAS
+        =========================== -->
+
+        <section class="daily-routines">
+
+            <div class="section-header">
+
+                <h2>
+                    Categorías de Rutina Diaria
+                </h2>
+
+            </div>
+
+            <div class="routine-grid">
+
+                <!-- RELAJACIÓN -->
+
+                <div class="routine-card relaxation">
+
+                    <div class="card-header">
+
+                        <span>
+                            Favorita
+                        </span>
+
+                    </div>
+
+                    <h3>
+                        Relajación
+                    </h3>
+
+                    <p>
+                        Ejercicios suaves para disminuir el estrés y fomentar la calma.
+                    </p>
+
+                    <button>
+
+                        <a href="rutinas.html">Explorar</a>
+
+                    </button>
+
+                </div>
+
+                <!-- ENERGÍA -->
+
+                <div class="routine-card energy">
+
+                    <h3>
+                        Energía
+                    </h3>
+
+                    <p>
+                        Actividades dinámicas para despertar cuerpo y mente.
+                    </p>
+
+                </div>
+
+                <!-- ENFOQUE -->
+
+                <div class="routine-card focus">
+
+                    <h3>
+                        Enfoque
+                    </h3>
+
+                    <p>
+                        Técnicas de concentración y respiración consciente.
+                    </p>
+
+                    <img src="images/conejo.png" alt="">
+
+                </div>
+
+                <!-- PROGRESO -->
+
+                <div class="routine-card progress">
+
+                    <h3>
+                        Progreso Semanal
+                    </h3>
+
+                    <div class="progress-circle">
+
+                        92%
+
+                    </div>
+
+                    <p>
+                        Participación activa de los estudiantes.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- ==========================
+             ACTIVIDAD RECIENTE
+        =========================== -->
+
+        <section class="recent-activity">
+
+            <div class="section-header">
+
+                <h2>
+                    Actividad Reciente
+                </h2>
+
+            </div>
+
+            <div class="activity-list">
+
+                <div class="activity-item">
+
+                    <div class="activity-icon">
+
+                        <i class="fa-solid fa-spa"></i>
+
+                    </div>
+
+                    <div>
+
+                        <h4>
+                            Sesión completada
+                        </h4>
+
+                        <span>
+                            Hace 20 minutos
+                        </span>
+
+                    </div>
+
+                </div>
+
+                <div class="activity-item">
+
+                    <div class="activity-icon">
+
+                        <i class="fa-solid fa-book-open"></i>
+
+                    </div>
+
+                    <div>
+
+                        <h4>
+                            Nuevo cuento añadido
+                        </h4>
+
+                        <span>
+                            Hoy
+                        </span>
+
+                    </div>
+
+                </div>
+
+                <div class="activity-item">
+
+                    <div class="activity-icon">
+
+                        <i class="fa-solid fa-trophy"></i>
+
+                    </div>
+
+                    <div>
+
+                        <h4>
+                            Nuevo logro desbloqueado
+                        </h4>
+
+                        <span>
+                            Esta semana
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- ==========================
+             TARJETA FINAL
+        =========================== -->
+
+        <section class="mindfulness-banner">
+
+            <div>
+
+                <h2>
+                    Mantente presente,
+                    inspira a tus estudiantes.
+                </h2>
+
+                <p>
+
+                    Cada práctica cuenta para construir hábitos saludables y felices.
+
+                </p>
+
+            </div>
+
+        </section>
+
+        <!-- FOOTER -->
+
+        <footer class="dashboard-footer">
+
+            <p>
+
+                © 2026 ZenSide - Angie Parada
+
+            </p>
+
+        </footer>
+
+    </main>
+
+
+    <script src="js/dashboard.js"></script>
+    <script src="js/auth.js"></script>
+</body>
+
+</html>

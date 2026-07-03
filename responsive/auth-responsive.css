@@ -1,0 +1,305 @@
+/*======================================
+TABLET
+======================================*/
+
+@media (max-width: 992px){
+
+    .auth-container{
+
+        grid-template-columns:1fr;
+
+        gap:50px;
+
+        text-align:center;
+
+    }
+
+    .auth-left{
+
+        align-items:center;
+
+    }
+
+    .welcome-text p{
+
+        max-width:700px;
+
+        margin:auto;
+
+    }
+
+}
+
+/*======================================
+MOBILE
+======================================*/
+
+@media (max-width:768px){
+
+    .auth-page{
+
+        padding:20px;
+
+    }
+
+    .auth-container{
+
+        display:flex;
+        flex-direction:column;
+
+        gap:25px;
+    }
+
+    /*==============================
+    LOGO
+    ==============================*/
+
+    .logo img{
+
+        width:180px;
+
+        margin:0 auto 20px;
+
+        display:block;
+
+    }
+
+    /*==============================
+    IMAGEN PANDA
+    ==============================*/
+
+    .welcome-image{
+
+        max-width:220px;
+
+        margin:auto;
+
+        padding:10px;
+
+        border-radius:20px;
+
+    }
+
+    /*==============================
+    TEXTO IZQUIERDO
+    ==============================*/
+
+    .welcome-text{
+
+        text-align:center;
+
+    }
+
+    .welcome-text h1{
+
+        font-size:2.4rem;
+
+        margin-top:15px;
+
+    }
+
+    .welcome-text p{
+
+        font-size:.95rem;
+
+        line-height:1.7;
+
+        padding:0 10px;
+
+    }
+
+    /*==============================
+    CARD LOGIN
+    ==============================*/
+
+    .auth-card{
+
+        max-width:100%;
+
+        padding:30px 25px;
+
+        border-radius:30px;
+
+    }
+
+    .auth-card h2{
+
+        font-size:1.8rem;
+
+        margin-bottom:25px;
+
+    }
+
+    /*==============================
+    INPUTS
+    ==============================*/
+
+    .input-group{
+
+        margin-bottom:18px;
+
+    }
+
+    .input-box{
+
+        padding:15px 18px;
+
+    }
+
+    .input-box input{
+
+        font-size:.95rem;
+
+    }
+
+    /*==============================
+    BOTÓN
+    ==============================*/
+
+    .auth-btn{
+
+        padding:16px;
+
+        font-size:1rem;
+
+    }
+
+}
+
+/*======================================
+MOBILE PEQUEÑOS
+======================================*/
+
+@media (max-width:480px){
+
+    body{
+
+        background:
+        linear-gradient(
+        180deg,
+        #D1F6E6 0%,
+        #F4F7F4 45%,
+        #DCEFFB 100%
+        );
+
+    }
+
+    .auth-page{
+
+        padding:15px;
+
+    }
+
+    .auth-container{
+
+        gap:15px;
+
+    }
+
+    /*==============================
+    LOGO
+    ==============================*/
+
+    .logo img{
+
+        width:150px;
+
+    }
+
+    /*==============================
+    PANDA
+    ==============================*/
+
+    .welcome-image{
+
+        width:180px;
+
+    }
+
+    /*==============================
+    TITULO
+    ==============================*/
+
+    .welcome-text h1{
+
+        font-size:2rem;
+
+    }
+
+    .welcome-text p{
+
+        font-size:.9rem;
+
+    }
+
+    /*==============================
+    FORMULARIO
+    ==============================*/
+
+    .auth-card{
+
+        padding:25px 20px;
+
+        border-radius:25px;
+
+    }
+
+    .auth-card h2{
+
+        font-size:1.5rem;
+
+    }
+
+    .input-group label{
+
+        font-size:.85rem;
+
+    }
+
+    .input-box{
+
+        padding:14px 16px;
+
+    }
+
+    .auth-btn{
+
+        font-size:.95rem;
+
+        padding:15px;
+
+    }
+
+    .auth-link{
+
+        font-size:.9rem;
+
+    }
+
+}
+
+/*======================================
+PANTALLAS GRANDES
+======================================*/
+
+@media (min-width:1400px){
+
+    .auth-container{
+
+        max-width:1400px;
+
+    }
+
+    .welcome-text h1{
+
+        font-size:4.5rem;
+
+    }
+
+    .auth-card{
+
+        max-width:520px;
+
+    }
+
+}

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Detalle Rutina</title>
+
+    <link rel="stylesheet" href="css/relajacion-escolar.css">
+    <link rel="stylesheet" href="responsive/relajacion-resposive.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+</head>
+
+<body>
+
+    <div class="routine-container">
+
+        <div class="top-bar">
+
+            <button class="back-btn" onclick="volverRutinas()">
+
+                <i class="fa-solid fa-arrow-left"></i>
+
+            </button>
+
+            <div>
+
+                <h1 id="routineTitle">
+                    Relajacion Escolar
+                </h1>
+
+                <p id="routineSubtitle">
+                    Sesión 3: Calma
+                </p>
+
+            </div>
+
+            <span class="level-badge">
+                ♥ Yoga Nivel 2
+            </span>
+
+        </div>
+
+        <div class="content-layout">
+
+            <section class="main-content">
+
+                <div class="video-card">
+
+                    <img id="mainImage"
+                        src="images/montana.jpg">
+
+                </div>
+
+                <div class="info-card">
+
+                    <h3>
+                        ¿Por qué este flujo?
+                    </h3>
+
+                    <p id="mainDescription"></p>
+
+                </div>
+
+            </section>
+
+            <aside class="next-postures">
+
+                <div class="side-header">
+
+                    <h2>
+                        Siguientes Posturas
+                    </h2>
+
+                    <span class="steps-left" id="stepsLeft">
+                        Faltan 3 pasos
+                    </span>
+
+                </div>
+
+                <div id="postureList">
+
+                </div>
+
+            </aside>
+
+        </div>
+
+    </div>
+
+    <script src="js/relajacion_escolar.js"></script>
+
+</body>
+
+</html>
